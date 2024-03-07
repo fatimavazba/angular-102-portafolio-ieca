@@ -17,7 +17,7 @@
         <ul>
             <li>
                 <!-- Completa la navegación -->
-                <a href="#">Acerca de</a>
+                <a href="/2-fundamentos-web/html/ejercicio-2/acerca.html">Acerca de</a>
             </li>
         </ul>
     </nav>
@@ -30,9 +30,27 @@
             <input type="text" id="nombre" name="nombre" required>
         
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-
+            <input type="text" id="apellido" name="apellido" required>  
+           
             <!-- Agrega los inputs faltantes -->
+            <br>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="pwd">Contraseña :</label>
+            <input type="password" id="pwd" name="pwd">
+            <br>
+            <label for="FechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="FechaNacimiento" name="FechaNacimiento"> 
+            <br>
+            <label for="telefono">Telefono :</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> 
+            <br>
+            <label for="direccion">Direccion :</label>
+            <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea> 
+            <br>
+            <button type="button">Aceptar</button> 
+
         </form>
     </main>
 
