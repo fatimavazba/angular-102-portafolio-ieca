@@ -41,8 +41,8 @@ function vaciarCarritoConTotal() {
     const articulos = carrito.length;
 
     for (let i = 0; i < articulos; i++) {
-        const articulo = carrito.shift();
         total += articulo.precio;
+        const articulo = carrito.shift();        
     }
 
     console.log(carrito, total);
