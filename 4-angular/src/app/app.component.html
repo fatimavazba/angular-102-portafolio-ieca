@@ -88,7 +88,8 @@
                         <strong>{{ persona }}</strong>
                         <!-- EJERCICIO 01 -->
                         <!-- Agregar funcionalidad para eliminar el nombre de la persona de la lista utilizando el span con ❌ -->
-                        <span> ❌ </span>
+                        
+                        <span delete(listaPersonas[i]) > ❌ </span>
                     </div>
                 </li>
 
@@ -156,13 +157,14 @@
                     name="passkey"
                     [(ngModel)]="registroInputs.passkey"
                     #passkey="ngModel"
+                    ng-pattern="^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$" 
                 >
             </div>
 
             <button [disabled]="registroForm.invalid" type="submit">Registrar</button>
             <!-- EJERCICIO 03 -->
-            <!-- * Habilitar botón para limpiar información -->
-            <button>Limpiar</button>
+            <!-- * Habilitar botón para limpiar información -->     
+            <button (click)="limpiar()">Limpiar</button>
         </form>
     </div>
 
